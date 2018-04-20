@@ -1,0 +1,94 @@
+.circle_img {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0.1rem 0 #77afff;
+    background: #77afff;
+    img {
+        width: 100%;
+    }
+}
+
+.panel_card {
+    background: #eee;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    .panel_card_title {
+        padding: 0.5rem 0;
+        color: #38f;
+        .van-icon {
+            font-size: 1.6rem;
+            vertical-align: sub;
+        }
+        span {
+            font-size: 1.5rem;
+        }
+    }
+    .panel_card_info {
+        background: #fff;
+    }
+}
+
+.text-over {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.van-cell {
+    .van-row {
+        .van-col {
+            .text-over;
+        }
+    }
+}
+
+.card_info_note {
+    p {
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #aaa;
+    }
+    span {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        color: #ff6700;
+    }
+}
+
+@mytag_lang: 4rem;
+.my_tag {
+    background: #ff0000;
+    border: 0.1rem solid #ff0000;
+    color: #fff;
+    width: @mytag_lang;
+    height: @mytag_lang;
+    border-radius: 50%;
+    text-align: center;
+    line-height: @mytag_lang;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transform: rotate(30deg)
+}
+
+.clearfix {
+    ::after{
+        content: "";
+        display: block;
+        visibility: hidden;
+        height: 0;
+        clear: both;
+    }
+}
+
+.border1px{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    pointer-events: none;
+    border: 0 solid #e5e5e5;
+}
