@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  created() {
+    this.$store.dispatch("addfund", { name: "大河基金" });
+    console.log(this.$store.state.fundList);
+  }
 };
 </script>
 
